@@ -37,3 +37,20 @@ I will create a flask app that will have a mongoDB or PostgresSQL database on th
 The main data source I will use will be csv files from insideairbnb.  The data is not clean and will require EDA to be usable for ML models.  I will leverage the austintexas.org website to pull big event dates, such as, ACL, SXSW, and F1 to name a few.  Through EDA I will look for spikes in prices for the past years and see what drew more people and how did the market react.
 
 
+## Third Proposal
+
+### High Level Description
+
+I would like to get a sentiment analysis of 7 world wonders, utilizing data from TripAdvisor and Twitter.  What are the most common words people use to express their experiences? What is the most ‘loved’ world wonder.    
+
+### Approach:
+
+Scrape Twitter and TripAdvisor to get comments for each world wonder.  Load data to mongoDB.  Begin to filter out small filler words and focus on patterns. Incorporate other features, such as country, language, and how easy it is to get to the location.  Try to incorporate other data from popular travel sites.
+
+### Model interaction:
+
+I will create a flask app that will have a mongoDB or PostgresSQL database on the backend for people to interact with.  People can filter through the 7 wonders and see top findings and highlights of each.  
+
+### Data sources:
+
+Use web scraping to get data from several twitter, tripadvisor, and other specific world wonder websites.  
